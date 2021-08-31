@@ -29,26 +29,17 @@ body {
   color: rgb(254, 254, 254);
 }
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 nav ul {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 .header {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 50% 50%;
   margin: 30px auto;
-}
-.header-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 50%;
 }
 h1 {
   font-size: 5rem;
@@ -57,44 +48,29 @@ h1 {
   color: #474dff;
   font-size: 1.8rem;
 }
-.header-right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #modem {
   width: 100%;
   margin: 0 auto;
   display: block;
 }
 .infos {
-  display: flex;
+  display: grid;
+  grid-template-columns: 34% 66%;
   background: rgb(13, 13, 13);
   border-radius: 10px;
 }
-.infos-left {
-  width: 33%;
-}
 .btn-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.infos-right {
-  width: 67%;
+  display: grid;
+  height: 86%;
 }
 .investors {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  height: 80%;
+  height: 86%;
 }
 .img-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 .img-container img {
   height: 60px;
